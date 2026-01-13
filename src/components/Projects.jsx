@@ -4,11 +4,26 @@ export default function Projects() {
   return (
     <section>
       <h2>Projects</h2>
-      {projects.map((p, i) => (
-        <div key={i}>
-          <h3>{p.title}</h3>
-          <p>{p.tech}</p>
-          <a href={p.github}>GitHub</a>
+
+      {projects.map((project, index) => (
+        <div key={index} className="project">
+          <h3>{project.title}</h3>
+          <p><strong>{project.tech}</strong></p>
+
+          <ul>
+            {project.description.map((point, i) => (
+              <li key={i}>{point}</li>
+            ))}
+          </ul>
+
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noreferrer"
+            className="btn"
+          >
+            GitHub Repository
+          </a>
         </div>
       ))}
     </section>

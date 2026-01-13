@@ -2,6 +2,8 @@ body {
   font-family: Arial, sans-serif;
   max-width: 900px;
   margin: auto;
+  line-height: 1.75;
+  font-size: 16px;
 }
 section {
   margin-bottom: 40px;
@@ -44,6 +46,12 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
 
 button {
   border-radius: 8px;
